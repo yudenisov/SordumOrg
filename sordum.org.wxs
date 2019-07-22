@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="4165F112-FC71-4919-9BB0-05F49D61BEE6" Name="Sordum.Org Utils" Language="1033" Version="0.0.0.1" Manufacturer="New Internet Technologies Inc." UpgradeCode="171C0B9D-2C06-4517-B709-1791DAFF170B">
+        <Package Description="Sordum.Org Utils" Comments="Sordum.Org Utils" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="INSTALLFOLDER" Name="Util">
+                <Component Id="ASKADMIN.EXE" DiskId="1" Guid="F7C04887-349F-4F62-9D7E-24ED9F694CAF">
+                    <File Id="ASKADMIN.EXE" Name="AskAdmin.exe" Source="Util\AskAdmin.exe">
+                        <Shortcut Id="ExeShortcut01" Directory="ProgramMenuDir" Name="AskAdmin" Advertise="yes" Icon="StartMenuIcon01.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ASKADMIN.INI" DiskId="1" Guid="926B34DC-80CD-459D-940C-F629A6273AB2">
+                    <File Id="ASKADMIN.INI" Name="AskAdmin.ini" Source="Util\AskAdmin.ini" />
+                </Component>
+                <Component Id="ASKADMIN_X64.EXE" DiskId="1" Guid="C3A0AC1B-3ED5-4170-8CB6-7DB01D068A43">
+                    <File Id="ASKADMIN_X64.EXE" Name="AskAdmin_x64.exe" Source="Util\AskAdmin_x64.exe">
+                        <Shortcut Id="ExeShortcut02" Name="AskAdmin64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon02.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="COPYIP.EXE" DiskId="1" Guid="52E2C1F9-1EAB-4175-874D-F2EFE7138E95">
+                    <File Id="COPYIP.EXE" Name="CopyIP.exe" Source="Util\CopyIP.exe">
+                        <Shortcut Id="ExeShortcut03" Name="CopyIP" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon03.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DCHANGER.EXE" DiskId="1" Guid="4969D112-51C5-4E59-8067-D57513A5AE58">
+                    <File Id="DCHANGER.EXE" Name="dChanger.exe" Source="Util\dChanger.exe">
+                        <Shortcut Id="ExeShortcut04" Name="dChanger" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon04.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DCHANGER.INI" DiskId="1" Guid="5BB18B37-1605-486A-BD0C-D5535F8460DB">
+                    <File Id="DCHANGER.INI" Name="dChanger.ini" Source="Util\dChanger.ini" />
+                </Component>
+                <Component Id="DEFENDERCONTROL.EXE" DiskId="1" Guid="5B11AA91-B87B-4091-868D-FFCC417B3649">
+                    <File Id="DEFENDERCONTROL.EXE" Name="DefenderControl.exe" Source="Util\DefenderControl.exe">
+                        <Shortcut Id="ExeShortcut05" Name="DefenderControl" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon05.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DEFENDERCONTROL.INI" DiskId="1" Guid="098F0DCA-749D-4A04-8758-C889F0C49D62">
+                    <File Id="DEFENDERCONTROL.INI" Name="DefenderControl.ini" Source="Util\DefenderControl.ini" />
+                </Component>
+                <Component Id="DESKEDIT.EXE" DiskId="1" Guid="15EEFB59-0D2A-486D-B08E-665A335EBD00">
+                    <File Id="DESKEDIT.EXE" Name="DeskEdit.exe" Source="Util\DeskEdit.exe">
+                        <Shortcut Id="ExeShortcut06" Name="DeskEdit" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon06.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DESKEDIT.INI" DiskId="1" Guid="EA4CC49C-1372-4923-A581-687DCDCB4B1D">
+                    <File Id="DESKEDIT.INI" Name="DeskEdit.ini" Source="Util\DeskEdit.ini" />
+                </Component>
+                <Component Id="DINJECTOR.EXE" DiskId="1" Guid="DE4E9C76-B5E7-4DB2-8366-B998B0592C8E">
+                    <File Id="DINJECTOR.EXE" Name="dInjector.exe" Source="Util\dInjector.exe">
+                        <Shortcut Id="ExeShortcut07" Name="dInjector" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon07.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DNS_LOCK.EXE" DiskId="1" Guid="435986BB-150A-40E5-81ED-92B7F71C46DD">
+                    <File Id="DNS_LOCK.EXE" Name="DNS-Lock.exe" Source="Util\DNS-Lock.exe">
+                        <Shortcut Id="ExeShortcut08" Name="DNS-Lock" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon08.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DNS_LOCK_X64.EXE" DiskId="1" Guid="F739658C-21EE-4E68-B4EA-8FDF78542C46">
+                    <File Id="DNS_LOCK_X64.EXE" Name="DNS-Lock_x64.exe" Source="Util\DNS-Lock_x64.exe">
+                        <Shortcut Id="ExeShortcut09" Name="DNS-Lock_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon09.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DNSANGEL.EXE" DiskId="1" Guid="B6B6264A-AEF2-489B-AC0F-762B2A8C51C1">
+                    <File Id="DNSANGEL.EXE" Name="DnsAngel.exe" Source="Util\DnsAngel.exe">
+                        <Shortcut Id="ExeShortcut10" Name="DnsAngel" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon10.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DNSANGEL.INI" DiskId="1" Guid="FF83040B-414C-4CAB-B0AE-176A4CF92D59">
+                    <File Id="DNSANGEL.INI" Name="DnsAngel.ini" Source="Util\DnsAngel.ini" />
+                </Component>
+                <Component Id="DNSJUMPER.EXE" DiskId="1" Guid="CD320522-5E91-4A9B-8B33-0F03F46C3848">
+                    <File Id="DNSJUMPER.EXE" Name="DnsJumper.exe" Source="Util\DnsJumper.exe">
+                        <Shortcut Id="ExeShortcut11" Name="DnsJumper" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon11.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="DNSJUMPER.INI" DiskId="1" Guid="E391EAB7-29E8-4683-843A-2BB1AA23DAE0">
+                    <File Id="DNSJUMPER.INI" Name="DnsJumper.ini" Source="Util\DnsJumper.ini" />
+                </Component>
+                <Component Id="ECMENU.EXE" DiskId="1" Guid="A94ECCD5-E025-41D0-A044-D3A885729305">
+                    <File Id="ECMENU.EXE" Name="EcMenu.exe" Source="Util\EcMenu.exe">
+                        <Shortcut Id="ExeShortcut12" Name="EcMenu" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon12.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ECMENU_X64.EXE" DiskId="1" Guid="6F6E7FB1-A977-4084-861E-E07CA769F756">
+                    <File Id="ECMENU_X64.EXE" Name="EcMenu_x64.exe" Source="Util\EcMenu_x64.exe">
+                        <Shortcut Id="ExeShortcut13" Name="EcMenu_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon13.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="EDGEBLOCK.EXE" DiskId="1" Guid="92360B4D-0E6C-4E41-A191-6E80DF2DAE42">
+                    <File Id="EDGEBLOCK.EXE" Name="EdgeBlock.exe" Source="Util\EdgeBlock.exe">
+                        <Shortcut Id="ExeShortcut14" Name="EdgeBlock" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon14.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ESO.EXE" DiskId="1" Guid="33F7A78F-8D9E-4409-A91B-08A66D3D27C5">
+                    <File Id="ESO.EXE" Name="eso.exe" Source="Util\eso.exe">
+                        <Shortcut Id="ExeShortcut15" Name="ESO" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon15.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ESO.INI" DiskId="1" Guid="E4509367-EDF9-4720-8FB9-1F6F0290B7DE">
+                    <File Id="ESO.INI" Name="eso.ini" Source="Util\eso.ini" />
+                </Component>
+                <Component Id="HIDEUL.EXE" DiskId="1" Guid="653FD9D6-ED34-4865-9D19-BB5DE7903ED6">
+                    <File Id="HIDEUL.EXE" Name="HideUL.exe" Source="Util\HideUL.exe">
+                        <Shortcut Id="ExeShortcut16" Name="HideUL" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon16.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="HIDEUL.INI" DiskId="1" Guid="AD8017F0-B555-4B8E-8B0A-164C11D8B849">
+                    <File Id="HIDEUL.INI" Name="HideUL.ini" Source="Util\HideUL.ini" />
+                </Component>
+                <Component Id="HOSTSEDITOR.EXE" DiskId="1" Guid="8BF46440-FCE1-4AAD-8E0E-F91F1B7BD44E">
+                    <File Id="HOSTSEDITOR.EXE" Name="HostsEditor.exe" Source="Util\HostsEditor.exe">
+                        <Shortcut Id="ExeShortcut17" Name="HostsEditor" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon17.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="HOSTSEDITOR.INI" DiskId="1" Guid="CA46FEE2-732F-4858-AF52-74A6431AE226">
+                    <File Id="HOSTSEDITOR.INI" Name="HostsEditor.ini" Source="Util\HostsEditor.ini" />
+                </Component>
+                <Component Id="NETDISABLER.EXE" DiskId="1" Guid="51668964-B054-4164-8705-0705A90BB554">
+                    <File Id="NETDISABLER.EXE" Name="NetDisabler.exe" Source="Util\NetDisabler.exe">
+                        <Shortcut Id="ExeShortcut18" Name="NetDisabler" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon18.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="NETDISABLER_X64.EXE" DiskId="1" Guid="6F2FED9E-7136-4085-8B36-05AA258F85E9">
+                    <File Id="NETDISABLER_X64.EXE" Name="NetDisabler_x64.exe" Source="Util\NetDisabler_x64.exe">
+                        <Shortcut Id="ExeShortcut19" Name="NetDisabler_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon19.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="POWERRUN.EXE" DiskId="1" Guid="475C01CF-B7A7-4CF1-8B17-6B5C626B628A">
+                    <File Id="POWERRUN.EXE" Name="PowerRun.exe" Source="Util\PowerRun.exe">
+                        <Shortcut Id="ExeShortcut20" Name="PowerRun" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon20.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="POWERRUN.INI" DiskId="1" Guid="B52D4DD6-B022-4A8C-8BD0-4817E00AFD97">
+                    <File Id="POWERRUN.INI" Name="PowerRun.ini" Source="Util\PowerRun.ini" />
+                </Component>
+                <Component Id="POWERRUN_X64.EXE" DiskId="1" Guid="5DEB811F-CDF1-4255-8122-A5E17EF1809D">
+                    <File Id="POWERRUN_X64.EXE" Name="PowerRun_x64.exe" Source="Util\PowerRun_x64.exe">
+                        <Shortcut Id="ExeShortcut21" Name="PowerRun_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon21.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="QSIB.EXE" DiskId="1" Guid="23F42809-44CC-4EBA-87CB-C8C2254F1E2B">
+                    <File Id="QSIB.EXE" Name="Qsib.exe" Source="Util\Qsib.exe">
+                        <Shortcut Id="ExeShortcut22" Name="Qsib" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon22.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="RATOOL.EXE" DiskId="1" Guid="8B2DCFD8-39B3-48DD-9CC8-87469B8F98C7">
+                    <File Id="RATOOL.EXE" Name="Ratool.exe" Source="Util\Ratool.exe">
+                        <Shortcut Id="ExeShortcut23" Name="Ratool" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon23.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="RATOOL.INI" DiskId="1" Guid="48498824-70AC-454C-ACE5-9AB08075B557">
+                    <File Id="RATOOL.INI" Name="Ratool.ini" Source="Util\Ratool.ini" />
+                </Component>
+                <Component Id="REDUCEMEMORY.EXE" DiskId="1" Guid="8419102A-1F0F-4368-9FD3-6C1009EAEC01">
+                    <File Id="REDUCEMEMORY.EXE" Name="ReduceMemory.exe" Source="Util\ReduceMemory.exe">
+                        <Shortcut Id="ExeShortcut24" Name="ReduceMemory" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon24.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REDUCEMEMORY.INI" DiskId="1" Guid="429D9AA4-9521-4327-81EF-4A845ED0EF27">
+                    <File Id="REDUCEMEMORY.INI" Name="ReduceMemory.ini" Source="Util\ReduceMemory.ini" />
+                </Component>
+                <Component Id="REGCONVERT.EXE" DiskId="1" Guid="C763D5C0-D3C6-45B1-99A0-12DC62DA2B1F">
+                    <File Id="REGCONVERT.EXE" Name="RegConvert.exe" Source="Util\RegConvert.exe">
+                        <Shortcut Id="ExeShortcut25" Name="RegConvert" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon25.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REGCONVERT.INI" DiskId="1" Guid="F2A72613-C9FD-4EF7-9F72-F94100FEAD39">
+                    <File Id="REGCONVERT.INI" Name="RegConvert.ini" Source="Util\RegConvert.ini" />
+                </Component>
+                <Component Id="REGJUMP.EXE" DiskId="1" Guid="5F3EA493-69B2-496F-A295-AB10F744ADF8">
+                    <File Id="REGJUMP.EXE" Name="RegJump.exe" Source="Util\RegJump.exe">
+                        <Shortcut Id="ExeShortcut26" Name="RegJump" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon26.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REGJUMP.INI" DiskId="1" Guid="A1A9578C-481D-451A-BD4A-EAC38104DA5D">
+                    <File Id="REGJUMP.INI" Name="RegJump.ini" Source="Util\RegJump.ini" />
+                </Component>
+                <Component Id="REGJUMP_X64.EXE" DiskId="1" Guid="0DD1A752-6ABA-4427-9F0A-686C238F0ECF">
+                    <File Id="REGJUMP_X64.EXE" Name="RegJump_x64.exe" Source="Util\RegJump_x64.exe">
+                        <Shortcut Id="ExeShortcut27" Name="RegJump_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon27.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REICON.EXE" DiskId="1" Guid="74ADC02D-010A-4C70-9CC3-2EDFCF680E86">
+                    <File Id="REICON.EXE" Name="ReIcon.exe" Source="Util\ReIcon.exe">
+                        <Shortcut Id="ExeShortcut28" Name="ReIcon" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon28.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REICON.INI" DiskId="1" Guid="B46C218C-BE33-4085-8E4F-E09664CB649E">
+                    <File Id="REICON.INI" Name="ReIcon.ini" Source="Util\ReIcon.ini" />
+                </Component>
+                <Component Id="REICON_X64.EXE" DiskId="1" Guid="76B9EB48-3C21-45BC-97A3-85D157786516">
+                    <File Id="REICON_X64.EXE" Name="ReIcon_x64.exe" Source="Util\ReIcon_x64.exe">
+                        <Shortcut Id="ExeShortcut29" Name="ReIcon_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon29.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REXPLORER.EXE" DiskId="1" Guid="7579D08B-5B19-4717-8FCC-BAA2DBA9F60C">
+                    <File Id="REXPLORER.EXE" Name="Rexplorer.exe" Source="Util\Rexplorer.exe">
+                        <Shortcut Id="ExeShortcut30" Name="Rexplorer" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon30.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="REXPLORER_X64.EXE" DiskId="1" Guid="FB089010-4CB6-4643-BEC3-9D78236D2379">
+                    <File Id="REXPLORER_X64.EXE" Name="Rexplorer_x64.exe" Source="Util\Rexplorer_x64.exe">
+                        <Shortcut Id="ExeShortcut31" Name="Rexplorer_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ROUTERDP.EXE" DiskId="1" Guid="AD777E84-A66A-4F4D-9EF1-7FC8D6272AC1">
+                    <File Id="ROUTERDP.EXE" Name="RouterDP.exe" Source="Util\RouterDP.exe">
+                        <Shortcut Id="ExeShortcut32" Name="RouterDP" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="ROUTERDP.INI" DiskId="1" Guid="8EFEA49B-3CD8-4915-BEE6-0A98DED13FF9">
+                    <File Id="ROUTERDP.INI" Name="RouterDP.ini" Source="Util\RouterDP.ini" />
+                </Component>
+                <Component Id="RUNASTOOL.EXE" DiskId="1" Guid="5D9A92A3-D2B4-4392-A701-2902A298B8C0">
+                    <File Id="RUNASTOOL.EXE" Name="RunAsTool.exe" Source="Util\RunAsTool.exe">
+                        <Shortcut Id="ExeShortcut33" Name="RunAsTool" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="RUNASTOOL.INI" DiskId="1" Guid="F3E5944C-B3A6-44EA-8B4B-DE3FF8B95538">
+                    <File Id="RUNASTOOL.INI" Name="RunAsTool.ini" Source="Util\RunAsTool.ini" />
+                </Component>
+                <Component Id="RUNASTOOL_X64.EXE" DiskId="1" Guid="49D1605E-204F-42C7-9F58-764BA722DA7C">
+                    <File Id="RUNASTOOL_X64.EXE" Name="RunAsTool_x64.exe" Source="Util\RunAsTool_x64.exe">
+                        <Shortcut Id="ExeShortcut34" Name="RunAsTool_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="RUNBLOCK.EXE" DiskId="1" Guid="1BF04E44-CA68-4110-BF9B-A8C09470AAAC">
+                    <File Id="RUNBLOCK.EXE" Name="RunBlock.exe" Source="Util\RunBlock.exe">
+                        <Shortcut Id="ExeShortcut35" Name="RunBlock" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="RUNBLOCK.INI" DiskId="1" Guid="D8463DD0-7B02-485A-8AA4-93799C2B49F5">
+                    <File Id="RUNBLOCK.INI" Name="RunBlock.ini" Source="Util\RunBlock.ini" />
+                </Component>
+                <Component Id="SDESKICON.EXE" DiskId="1" Guid="BEF0939B-A282-423E-9500-7BC7EE0E7899">
+                    <File Id="SDESKICON.EXE" Name="sDeskIcon.exe" Source="Util\sDeskIcon.exe">
+                        <Shortcut Id="ExeShortcut36" Name="sDeskIcon" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="SENDTOEDITOR.EXE" DiskId="1" Guid="7D5E78A5-974D-4CE8-9300-05954EC06D7E">
+                    <File Id="SENDTOEDITOR.EXE" Name="SendToEditor.exe" Source="Util\SendToEditor.exe">
+                        <Shortcut Id="ExeShortcut37" Name="SendToEditor" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="SENDTOEDITOR.INI" DiskId="1" Guid="BBA7D6E9-F584-461E-A3AE-A3E573E64A7E">
+                    <File Id="SENDTOEDITOR.INI" Name="SendToEditor.ini" Source="Util\SendToEditor.ini" />
+                </Component>
+                <Component Id="SENDTOEDITOR_X64.EXE" DiskId="1" Guid="4156DDD4-CC02-4456-9EC5-BBD3E812F6C1">
+                    <File Id="SENDTOEDITOR_X64.EXE" Name="SendToEditor_x64.exe" Source="Util\SendToEditor_x64.exe">
+                        <Shortcut Id="ExeShortcut38" Name="SendToEditor_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="SHUTDOWN.EXE" DiskId="1" Guid="94B8F110-16C1-444E-B864-D742B2593E29">
+                    <File Id="SHUTDOWN.EXE" Name="Shutdown.exe" Source="Util\Shutdown.exe">
+                        <Shortcut Id="ExeShortcut39" Name="SHUTDOWN" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="SREMOVER.EXE" DiskId="1" Guid="97CC16CD-0E19-45BE-8C65-EE269B43A52B">
+                    <File Id="SREMOVER.EXE" Name="sRemover.exe" Source="Util\sRemover.exe">
+                        <Shortcut Id="ExeShortcut40" Name="sRemover" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="TOPMOST.EXE" DiskId="1" Guid="76E2413B-AB09-4F88-995B-416515343F19">
+                    <File Id="TOPMOST.EXE" Name="TopMost.exe" Source="Util\TopMost.exe">
+                        <Shortcut Id="ExeShortcut41" Name="TopMost" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="VHDMANAGER.EXE" DiskId="1" Guid="FEF4AFAC-757F-4637-BF5B-0F2E4A553D5D">
+                    <File Id="VHDMANAGER.EXE" Name="VhdManager.exe" Source="Util\VhdManager.exe">
+                        <Shortcut Id="ExeShortcut42" Name="VhdManager" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="VHDMANAGER.INI" DiskId="1" Guid="C248E461-DBF9-4C11-935E-108C2B390D9B">
+                    <File Id="VHDMANAGER.INI" Name="VhdManager.ini" Source="Util\VhdManager.ini" />
+                </Component>
+                <Component Id="VHDTOMENU.EXE" DiskId="1" Guid="3F66EA7D-202B-428F-AD8B-5AC0B1ECFE91">
+                    <File Id="VHDTOMENU.EXE" Name="VhdToMenu.exe" Source="Util\VhdToMenu.exe">
+                        <Shortcut Id="ExeShortcut43" Name="VhdToMenu" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="WEBCAM.EXE" DiskId="1" Guid="32D6A360-AA5D-47EA-A720-F1D5BA9EDB2C">
+                    <File Id="WEBCAM.EXE" Name="WebCam.exe" Source="Util\WebCam.exe">
+                        <Shortcut Id="ExeShortcut44" Name="WebCam" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="WSBLOCKER.EXE" DiskId="1" Guid="8007BAA9-84C9-49AF-ADDD-E8075BCB3373">
+                    <File Id="WSBLOCKER.EXE" Name="WsBlocker.exe" Source="Util\WsBlocker.exe">
+                        <Shortcut Id="ExeShortcut45" Name="WsBlocker" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="WSBLOCKER.INI" DiskId="1" Guid="3EED1C1C-99D5-4BDD-9E3A-8CB3A9F41C13">
+                    <File Id="WSBLOCKER.INI" Name="WsBlocker.ini" Source="Util\WsBlocker.ini" />
+                </Component>
+                <Component Id="WSBLOCKER_X64.EXE" DiskId="1" Guid="2F28F6A2-AC11-4DB5-80B6-CC28EBD6C788">
+                    <File Id="WSBLOCKER_X64.EXE" Name="WsBlocker_x64.exe" Source="Util\WsBlocker_x64.exe">
+                        <Shortcut Id="ExeShortcut46" Name="WsBlocker_x64" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="WUB.EXE" DiskId="1" Guid="EC579A41-F185-4245-9310-B478F4647FCD">
+                    <File Id="WUB.EXE" Name="Wub.exe" Source="Util\Wub.exe">
+                        <Shortcut Id="ExeShortcut47" Name="Windows Update Blocker" Advertise="yes" Directory="ProgramMenuDir" Icon="StartMenuIcon.exe" IconIndex="0" />
+                    </File>
+                </Component>
+                <Component Id="WUB.INI" DiskId="1" Guid="B2828C04-A915-4904-AE6E-BC5986F84BCE">
+                    <File Id="WUB.INI" Name="Wub.ini" Source="Util\Wub.ini" />
+                </Component>
+                <Directory Id="FILES" Name="Files">
+                    <Component Id="ECMENU.INI" DiskId="1" Guid="6B701282-7A1A-4585-9465-AEB677CC082A">
+                        <File Id="ECMENU.INI" Name="EcMenu.ini" Source="Util\Files\EcMenu.ini" />
+                    </Component>
+                    <Component Id="ITEMS.INI" DiskId="1" Guid="01A30113-5BC8-45A5-ADD0-BFADC899D257">
+                        <File Id="ITEMS.INI" Name="Items.ini" Source="Util\Files\Items.ini" />
+                    </Component>
+                    <Component Id="README.TXT" DiskId="1" Guid="616242E9-3BD2-45EC-9229-9084FA0394F3">
+                        <File Id="README.TXT" Name="Readme.txt" Source="Util\Files\Readme.txt" />
+                    </Component>
+                    <Directory Id="NIRCMD" Name="nircmd">
+                        <Component Id="NIRCMD.CHM" DiskId="1" Guid="1D6969BB-0C30-4A91-AE16-F26C214CBD46">
+                            <File Id="NIRCMD.CHM" Name="NirCmd.chm" Source="Util\Files\nircmd\NirCmd.chm" />
+                        </Component>
+                        <Component Id="NIRCMD_X64.EXE" DiskId="1" Guid="F375C9F7-C58A-470E-AFF7-7B88ED13B264">
+                            <File Id="NIRCMD_X64.EXE" Name="nircmd_x64.exe" Source="Util\Files\nircmd\nircmd_x64.exe" />
+                        </Component>
+                        <Component Id="NIRCMD_X86.EXE" DiskId="1" Guid="F47B6DEC-1A9D-4377-B449-10617DCDF88D">
+                            <File Id="NIRCMD_X86.EXE" Name="nircmd_x86.exe" Source="Util\Files\nircmd\nircmd_x86.exe" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="STICKYNOTES" Name="StickyNotes">
+                        <Component Id="STICKYNOTES.ICO" DiskId="1" Guid="4122D55D-5F69-4323-882F-8A153B0456EA">
+                            <File Id="STICKYNOTES.ICO" Name="StickyNotes.ico" Source="Util\Files\StickyNotes\StickyNotes.ico" />
+                        </Component>
+                        <Component Id="STICKYNOTES.VBS" DiskId="1" Guid="1261B53E-E059-4A9B-A15E-E9771C208BEA">
+                            <File Id="STICKYNOTES.VBS" Name="StickyNotes.vbs" Source="Util\Files\StickyNotes\StickyNotes.vbs" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="QEMU" Name="qemu">
+                    <Component Id="BIOS.BIN" DiskId="1" Guid="3F3145A1-E4E1-4C06-9566-8660DE8B787E">
+                        <File Id="BIOS.BIN" Name="bios.bin" Source="Util\qemu\bios.bin" />
+                    </Component>
+                    <Component Id="LINUXBOOT.BIN" DiskId="1" Guid="01F56D77-1336-429C-85DC-2D89F62D8859">
+                        <File Id="LINUXBOOT.BIN" Name="linuxboot.bin" Source="Util\qemu\linuxboot.bin" />
+                    </Component>
+                    <Component Id="MULTIBOOT.BIN" DiskId="1" Guid="E4FEE985-0B62-4E10-9901-1E1D378B731A">
+                        <File Id="MULTIBOOT.BIN" Name="multiboot.bin" Source="Util\qemu\multiboot.bin" />
+                    </Component>
+                    <Component Id="PXE_E1000.ROM" DiskId="1" Guid="C770A1C6-2FDF-4390-A6D1-B59BE3CA2AA2">
+                        <File Id="PXE_E1000.ROM" Name="pxe-e1000.rom" Source="Util\qemu\pxe-e1000.rom" />
+                    </Component>
+                    <Component Id="PXE_EEPRO100.ROM" DiskId="1" Guid="83F3D165-0ECC-42F7-9149-C8886C0B00E7">
+                        <File Id="PXE_EEPRO100.ROM" Name="pxe-eepro100.rom" Source="Util\qemu\pxe-eepro100.rom" />
+                    </Component>
+                    <Component Id="PXE_NE2K_PCI.ROM" DiskId="1" Guid="F7334006-1D57-4AF4-87D4-896403CF76AE">
+                        <File Id="PXE_NE2K_PCI.ROM" Name="pxe-ne2k_pci.rom" Source="Util\qemu\pxe-ne2k_pci.rom" />
+                    </Component>
+                    <Component Id="PXE_PCNET.ROM" DiskId="1" Guid="EA16ECC7-1E50-447B-9EF7-9E8A69A13A67">
+                        <File Id="PXE_PCNET.ROM" Name="pxe-pcnet.rom" Source="Util\qemu\pxe-pcnet.rom" />
+                    </Component>
+                    <Component Id="PXE_RTL8139.ROM" DiskId="1" Guid="DF2B97FF-E43F-4EE1-A92E-8D97124DF73D">
+                        <File Id="PXE_RTL8139.ROM" Name="pxe-rtl8139.rom" Source="Util\qemu\pxe-rtl8139.rom" />
+                    </Component>
+                    <Component Id="PXE_VIRTIO.ROM" DiskId="1" Guid="88DFC5C6-6CD6-46F4-9F29-8C1A026EF68C">
+                        <File Id="PXE_VIRTIO.ROM" Name="pxe-virtio.rom" Source="Util\qemu\pxe-virtio.rom" />
+                    </Component>
+                    <Component Id="QEMU_SYSTEM_X86_64.EXE" DiskId="1" Guid="A2271D5B-1134-4428-BD92-9D106EB1A877">
+                        <File Id="QEMU_SYSTEM_X86_64.EXE" Name="qemu-system-x86_64.exe" Source="Util\qemu\qemu-system-x86_64.exe" />
+                    </Component>
+                    <Component Id="QEMU.EXE" DiskId="1" Guid="F925F77D-2DF3-457C-8623-A5F148F0F612">
+                        <File Id="QEMU.EXE" Name="qemu.exe" Source="Util\qemu\qemu.exe" />
+                    </Component>
+                    <Component Id="QSIB.INI" DiskId="1" Guid="58FAD029-EC42-40CA-9FDA-A2A1FC33B804">
+                        <File Id="QSIB.INI" Name="Qsib.ini" Source="Util\qemu\Qsib.ini" />
+                    </Component>
+                    <Component Id="SDL.DLL" DiskId="1" Guid="0804737A-876E-4571-B0AB-6648889E7F44">
+                        <File Id="SDL.DLL" Name="SDL.dll" Source="Util\qemu\SDL.dll" />
+                    </Component>
+                    <Component Id="VGABIOS_CIRRUS.BIN" DiskId="1" Guid="E5FCCC2A-9D49-4975-AE76-915182BA84E7">
+                        <File Id="VGABIOS_CIRRUS.BIN" Name="vgabios-cirrus.bin" Source="Util\qemu\vgabios-cirrus.bin" />
+                    </Component>
+                    <Component Id="VGABIOS_STDVGA.BIN" DiskId="1" Guid="7691D39F-8785-4264-A869-556B2CFFC22B">
+                        <File Id="VGABIOS_STDVGA.BIN" Name="vgabios-stdvga.bin" Source="Util\qemu\vgabios-stdvga.bin" />
+                    </Component>
+                    <Component Id="VGABIOS_VMWARE.BIN" DiskId="1" Guid="3B8E7F1F-E0AA-447E-9833-A93DFD3FCF6C">
+                        <File Id="VGABIOS_VMWARE.BIN" Name="vgabios-vmware.bin" Source="Util\qemu\vgabios-vmware.bin" />
+                    </Component>
+                    <Component Id="VGABIOS.BIN" DiskId="1" Guid="CCA35186-32C8-4A98-926C-E6BF672A026A">
+                        <File Id="VGABIOS.BIN" Name="vgabios.bin" Source="Util\qemu\vgabios.bin" />
+                    </Component>
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ProgramMenuDir" Name="Sordum.Org Utils">
+                    <Component Id="StartMenuShortcuts" Guid="8361BB52-B886-46A0-87CC-0D5BE5EF0042">
+                        <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
+                        <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]" Type="string" Value="" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </Directory>
+        <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+            <ComponentRef Id="ASKADMIN.EXE" />
+            <ComponentRef Id="ASKADMIN.INI" />
+            <ComponentRef Id="ASKADMIN_X64.EXE" />
+            <ComponentRef Id="COPYIP.EXE" />
+            <ComponentRef Id="DCHANGER.EXE" />
+            <ComponentRef Id="DCHANGER.INI" />
+            <ComponentRef Id="DEFENDERCONTROL.EXE" />
+            <ComponentRef Id="DEFENDERCONTROL.INI" />
+            <ComponentRef Id="DESKEDIT.EXE" />
+            <ComponentRef Id="DESKEDIT.INI" />
+            <ComponentRef Id="DINJECTOR.EXE" />
+            <ComponentRef Id="DNS_LOCK.EXE" />
+            <ComponentRef Id="DNS_LOCK_X64.EXE" />
+            <ComponentRef Id="DNSANGEL.EXE" />
+            <ComponentRef Id="DNSANGEL.INI" />
+            <ComponentRef Id="DNSJUMPER.EXE" />
+            <ComponentRef Id="DNSJUMPER.INI" />
+            <ComponentRef Id="ECMENU.EXE" />
+            <ComponentRef Id="ECMENU_X64.EXE" />
+            <ComponentRef Id="EDGEBLOCK.EXE" />
+            <ComponentRef Id="ESO.EXE" />
+            <ComponentRef Id="ESO.INI" />
+            <ComponentRef Id="HIDEUL.EXE" />
+            <ComponentRef Id="HIDEUL.INI" />
+            <ComponentRef Id="HOSTSEDITOR.EXE" />
+            <ComponentRef Id="HOSTSEDITOR.INI" />
+            <ComponentRef Id="NETDISABLER.EXE" />
+            <ComponentRef Id="NETDISABLER_X64.EXE" />
+            <ComponentRef Id="POWERRUN.EXE" />
+            <ComponentRef Id="POWERRUN.INI" />
+            <ComponentRef Id="POWERRUN_X64.EXE" />
+            <ComponentRef Id="QSIB.EXE" />
+            <ComponentRef Id="RATOOL.EXE" />
+            <ComponentRef Id="RATOOL.INI" />
+            <ComponentRef Id="REDUCEMEMORY.EXE" />
+            <ComponentRef Id="REDUCEMEMORY.INI" />
+            <ComponentRef Id="REGCONVERT.EXE" />
+            <ComponentRef Id="REGCONVERT.INI" />
+            <ComponentRef Id="REGJUMP.EXE" />
+            <ComponentRef Id="REGJUMP.INI" />
+            <ComponentRef Id="REGJUMP_X64.EXE" />
+            <ComponentRef Id="REICON.EXE" />
+            <ComponentRef Id="REICON.INI" />
+            <ComponentRef Id="REICON_X64.EXE" />
+            <ComponentRef Id="REXPLORER.EXE" />
+            <ComponentRef Id="REXPLORER_X64.EXE" />
+            <ComponentRef Id="ROUTERDP.EXE" />
+            <ComponentRef Id="ROUTERDP.INI" />
+            <ComponentRef Id="RUNASTOOL.EXE" />
+            <ComponentRef Id="RUNASTOOL.INI" />
+            <ComponentRef Id="RUNASTOOL_X64.EXE" />
+            <ComponentRef Id="RUNBLOCK.EXE" />
+            <ComponentRef Id="RUNBLOCK.INI" />
+            <ComponentRef Id="SDESKICON.EXE" />
+            <ComponentRef Id="SENDTOEDITOR.EXE" />
+            <ComponentRef Id="SENDTOEDITOR.INI" />
+            <ComponentRef Id="SENDTOEDITOR_X64.EXE" />
+            <ComponentRef Id="SHUTDOWN.EXE" />
+            <ComponentRef Id="SREMOVER.EXE" />
+            <ComponentRef Id="TOPMOST.EXE" />
+            <ComponentRef Id="VHDMANAGER.EXE" />
+            <ComponentRef Id="VHDMANAGER.INI" />
+            <ComponentRef Id="VHDTOMENU.EXE" />
+            <ComponentRef Id="WEBCAM.EXE" />
+            <ComponentRef Id="WSBLOCKER.EXE" />
+            <ComponentRef Id="WSBLOCKER.INI" />
+            <ComponentRef Id="WSBLOCKER_X64.EXE" />
+            <ComponentRef Id="WUB.EXE" />
+            <ComponentRef Id="WUB.INI" />
+            <ComponentRef Id="ECMENU.INI" />
+            <ComponentRef Id="ITEMS.INI" />
+            <ComponentRef Id="README.TXT" />
+            <ComponentRef Id="NIRCMD.CHM" />
+            <ComponentRef Id="NIRCMD_X64.EXE" />
+            <ComponentRef Id="NIRCMD_X86.EXE" />
+            <ComponentRef Id="STICKYNOTES.ICO" />
+            <ComponentRef Id="STICKYNOTES.VBS" />
+            <ComponentRef Id="BIOS.BIN" />
+            <ComponentRef Id="LINUXBOOT.BIN" />
+            <ComponentRef Id="MULTIBOOT.BIN" />
+            <ComponentRef Id="PXE_E1000.ROM" />
+            <ComponentRef Id="PXE_EEPRO100.ROM" />
+            <ComponentRef Id="PXE_NE2K_PCI.ROM" />
+            <ComponentRef Id="PXE_PCNET.ROM" />
+            <ComponentRef Id="PXE_RTL8139.ROM" />
+            <ComponentRef Id="PXE_VIRTIO.ROM" />
+            <ComponentRef Id="QEMU_SYSTEM_X86_64.EXE" />
+            <ComponentRef Id="QEMU.EXE" />
+            <ComponentRef Id="QSIB.INI" />
+            <ComponentRef Id="SDL.DLL" />
+            <ComponentRef Id="VGABIOS_CIRRUS.BIN" />
+            <ComponentRef Id="VGABIOS_STDVGA.BIN" />
+            <ComponentRef Id="VGABIOS_VMWARE.BIN" />
+            <ComponentRef Id="VGABIOS.BIN" />
+            <ComponentRef Id="StartMenuShortcuts" />
+        </Feature>
+        <UI />
+        <UIRef Id="WixUI_InstallDir" />
+        <Icon Id="StartMenuIcon.exe" SourceFile="Util\AskAdmin.exe" />
+        <Icon Id="StartMenuIcon01.exe" SourceFile="Util\AskAdmin.exe" />
+        <Icon Id="StartMenuIcon02.exe" SourceFile="Util\AskAdmin_x64.exe" />
+        <Icon Id="StartMenuIcon03.exe" SourceFile="Util\CopyIP.exe" />
+        <Icon Id="StartMenuIcon04.exe" SourceFile="Util\dChanger.exe" />
+        <Icon Id="StartMenuIcon05.exe" SourceFile="Util\DefenderControl.exe" />
+        <Icon Id="StartMenuIcon06.exe" SourceFile="Util\DeskEdit.exe" />
+        <Icon Id="StartMenuIcon07.exe" SourceFile="Util\dInjector.exe" />
+        <Icon Id="StartMenuIcon08.exe" SourceFile="Util\DNS-Lock.exe" />
+        <Icon Id="StartMenuIcon09.exe" SourceFile="Util\DNS-Lock_x64.exe" />
+        <Icon Id="StartMenuIcon10.exe" SourceFile="Util\DnsAngel.exe" />
+        <Icon Id="StartMenuIcon11.exe" SourceFile="Util\DnsJumper.exe" />
+        <Icon Id="StartMenuIcon12.exe" SourceFile="Util\EcMenu.exe" />
+        <Icon Id="StartMenuIcon13.exe" SourceFile="Util\EcMenu_x64.exe" />
+        <Icon Id="StartMenuIcon14.exe" SourceFile="Util\EdgeBlock.exe" />
+        <Icon Id="StartMenuIcon15.exe" SourceFile="Util\eso.exe" />
+        <Icon Id="StartMenuIcon16.exe" SourceFile="Util\HideUL.exe" />
+        <Icon Id="StartMenuIcon17.exe" SourceFile="Util\HostsEditor.exe" />
+        <Icon Id="StartMenuIcon18.exe" SourceFile="Util\NetDisabler.exe" />
+        <Icon Id="StartMenuIcon19.exe" SourceFile="Util\NetDisabler_x64.exe" />
+        <Icon Id="StartMenuIcon20.exe" SourceFile="Util\PowerRun.exe" />
+        <Icon Id="StartMenuIcon21.exe" SourceFile="Util\PowerRun_x64.exe" />
+        <Icon Id="StartMenuIcon22.exe" SourceFile="Util\Qsib.exe" />
+        <Icon Id="StartMenuIcon23.exe" SourceFile="Util\Ratool.exe" />
+        <Icon Id="StartMenuIcon24.exe" SourceFile="Util\ReduceMemory.exe" />
+        <Icon Id="StartMenuIcon25.exe" SourceFile="Util\RegConvert.exe" />
+        <Icon Id="StartMenuIcon26.exe" SourceFile="Util\RegJump.exe" />
+        <Icon Id="StartMenuIcon27.exe" SourceFile="Util\RegJump_x64.exe" />
+        <Icon Id="StartMenuIcon28.exe" SourceFile="Util\ReIcon.exe" />
+        <Icon Id="StartMenuIcon29.exe" SourceFile="Util\ReIcon_x64.exe" />
+        <Icon Id="StartMenuIcon30.exe" SourceFile="Util\Rexplorer.exe" />
+        <Icon Id="StartMenuIcon31.exe" SourceFile="Util\Rexplorer_x64.exe" />
+        <Icon Id="StartMenuIcon32.exe" SourceFile="Util\RouterDP.exe" />
+        <Icon Id="StartMenuIcon33.exe" SourceFile="Util\RunAsTool.exe" />
+        <Icon Id="StartMenuIcon34.exe" SourceFile="Util\RunAsTool_x64.exe" />
+        <Icon Id="StartMenuIcon35.exe" SourceFile="Util\RunBlock.exe" />
+        <Icon Id="StartMenuIcon36.exe" SourceFile="Util\sDeskIcon.exe" />
+        <Icon Id="StartMenuIcon37.exe" SourceFile="Util\SendToEditor.exe" />
+        <Icon Id="StartMenuIcon38.exe" SourceFile="Util\SendToEditor_x64.exe" />
+        <Icon Id="StartMenuIcon39.exe" SourceFile="Util\Shutdown.exe" />
+        <Icon Id="StartMenuIcon40.exe" SourceFile="Util\sRemover.exe" />
+        <Icon Id="StartMenuIcon41.exe" SourceFile="Util\TopMost.exe" />
+        <Icon Id="StartMenuIcon42.exe" SourceFile="Util\VhdManager.exe" />
+        <Icon Id="StartMenuIcon43.exe" SourceFile="Util\VhdToMenu.exe" />
+        <Icon Id="StartMenuIcon44.exe" SourceFile="Util\WebCam.exe" />
+        <Icon Id="StartMenuIcon45.exe" SourceFile="Util\WsBlocker.exe" />
+        <Icon Id="StartMenuIcon46.exe" SourceFile="Util\WsBlocker_x64.exe" />
+        <Icon Id="StartMenuIcon47.exe" SourceFile="Util\Wub.exe" />
+        <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+        <Property Id="ROOTDRIVE" Value="C:\" />
+    </Product>
+</Wix>
