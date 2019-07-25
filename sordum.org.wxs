@@ -3,6 +3,7 @@
     <Product Id="4165F112-FC71-4919-9BB0-05F49D61BEE6" Name="Sordum.Org Utils" Language="1033" Version="0.0.0.1" Manufacturer="New Internet Technologies Inc." UpgradeCode="171C0B9D-2C06-4517-B709-1791DAFF170B">
         <Package Description="Sordum.Org Utils" Comments="Sordum.Org Utils" InstallerVersion="200" Compressed="yes" />
         <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+      <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="INSTALLFOLDER" Name="Util">
                 <Component Id="ASKADMIN.EXE" DiskId="1" Guid="F7C04887-349F-4F62-9D7E-24ED9F694CAF">
