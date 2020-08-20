@@ -1,9 +1,0 @@
-LICENSE.md -- Лицензионное соглашение для пакета\n-- License for project and its parts\nВ
-descript.ion -- Описание каталога\nDirectory Description\nВ
-sordum.org.iss -- Script For Building InnoSetup Installer (Depricated)\nВ
-README.MD -- File ReadMe with Project Description\nВ
-WHATSNEWS.MD -- File with News of Project\nВ
-sordum.org.wxs -- WixToolset Data File for Build Installer (Actual)\nВ
-Util -- Directory With Utils (July 2019)\nВ
-.gitignore -- GitIgnore File\nВ
-license.rtf -- Fila with license\nВ
